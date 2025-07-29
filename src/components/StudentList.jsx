@@ -32,7 +32,7 @@ export default function StudentList() {
       ) : (
         <ul>
           {students.map((student) => (
-            <li key={student.studentId}>
+            <li key={student.studentId} style={{ color: "black" }}>
               {student.name}, Age: {student.age}
               {student.createdAt && (
                 <span> (Created: {new Date(student.createdAt).toLocaleDateString()})</span>
